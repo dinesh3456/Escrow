@@ -1,36 +1,34 @@
 {
-  "name": "escrow-hardhat-original",
+  "name": "react-javascript",
   "version": "1.0.0",
-  "description": "",
-  "main": "scripts/App.js",
-  "type": "commonjs",
+  "type": "module",
+  "description": "React TypeScript on Replit, using Vite bundler",
   "scripts": {
-    "start": "node --experimental-modules scripts/App.js",
-    "build": "webpack --mode production"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@ethersproject/providers": "^5.7.2",
+    "dotenv": "^16.0.3"
+  },
   "devDependencies": {
-    "@babel/cli": "^7.21.0",
-    "@babel/core": "^7.21.0",
-    "@babel/preset-env": "^7.20.2",
-    "@babel/preset-react": "^7.18.6",
-    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.5",
     "@nomicfoundation/hardhat-toolbox": "^1.0.2",
     "@nomiclabs/hardhat-ethers": "^2.2.2",
-    "babel-loader": "^9.1.2",
+    "@nomiclabs/hardhat-etherscan": "^3.1.6",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
     "chai": "^4.3.7",
     "ethers": "^5.7.2",
-    "hardhat": "^2.12.7",
-    "hardhat-deploy": "^0.11.24",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12"
-  },
-  "dependencies": {
-    "dotenv": "^16.0.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "web3-bzz": "^1.8.2"
+    "hardhat": "^2.12.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.1"
   }
 }
